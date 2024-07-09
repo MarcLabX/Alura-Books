@@ -47,7 +47,7 @@ Layout para Desktop >= 1200px
 
 
 <p>No link abaixo você pode ver o resultado da minha versão do projeto, e se quiser pode dar uma olhada no código fonte da página e tirar suas dúvidas, também fiz o mais fiel possível ao material do Figma, mas adaptei os cards por que preferi da maneira que está.</p>
-<p>Alura Books: <a href="https://MarcLabX.github.io/alura-books/">Alura Books</a></p>
+<p>Alura Books: <a href="https://alura-books-sage-pi.vercel.app/" target="_blank">Alura Books</a></p>
 
 
 <h2 id="autor"> 🔓 Autor </h2>
