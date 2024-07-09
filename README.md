@@ -1,4 +1,4 @@
-![alurabooks](https://user-images.githubusercontent.com/55258483/178596490-768a0e86-13ed-4dd2-9979-c3973c863ac4.png?w=200&h=100)
+![alurabooks](https://user-images.githubusercontent.com/55258483/178596490-768a0e86-13ed-4dd2-9979-c3973c863ac4.png)
 
 <h1 align="center" id="sobre">🔵 📚 Alura Books 📚 🔵</h1>
 
