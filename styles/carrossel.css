@@ -1,0 +1,191 @@
+.carrossel__titulo {
+    color: var(--dourado-principal);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size:  1.125em;
+    font-weight: 700;
+    padding: 1.25em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--azul);
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 1.25em;
+    width: auto;
+}
+
+.card {
+    margin: 1.5em;
+    padding:  1.3125em;
+    background-color: var(--branco);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.625em;
+}
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.descricao__titulo {
+    font-size: 1em;
+    color: var(--dourado-principal);
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+.descricao__titulo-livro {
+    margin: 0.5em 0;
+    color: var(--azul);
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.descricao__texto {
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.botoes__item {
+    margin: 0 0.60em;
+}
+
+.botoes__ancora {
+    padding: 1em 2.2em;
+    background-color: var(--dourado-principal);
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.descricao__imagem {
+    width: auto;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .carrossel__titulo {
+        font-size: 1.625em;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 5em 0;
+        transform: scale(1.5);
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-wrapper {
+        gap: 4.625em;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next {
+    display: flex;
+    margin: 1em -1.8em;
+    padding: 18px;
+    transform: scale(0.5);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--azul);
+    color: var(--branco);
+    }
+
+    .swiper-button-prev::after, 
+    .swiper-button-next::after {
+        transform: scale(0.5);
+    }
+
+    .card {
+        width: 65%;
+        margin: 3.84375em auto 3em auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .swiper-pagination {
+        margin: 2em 0 5em 0;
+        transform: scale(1.5);
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-wrapper {
+        gap: 4.625em;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next {
+    display: flex;
+    margin: 1em -1.8em;
+    padding: 18px;
+    transform: scale(0.5);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--azul);
+    color: var(--branco);
+    }
+
+    .swiper-button-prev::after, 
+    .swiper-button-next::after {
+        transform: scale(0.5);
+    }
+
+    .card {
+        width: 30%;
+        margin: 3.84375em auto 3em auto;
+    }
+
+    .botoes__ancora {
+        transition: 0.5s;
+    }
+
+    .botoes__ancora:hover {
+        transform: scale(1.1);
+        background-color: rgb(191, 88, 3);
+    }
+
+    .botoes {
+        transition: 0.5s;
+    }
+
+    .botoes img:hover {
+        transform: scale(1.2);
+    }
+}

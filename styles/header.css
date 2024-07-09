@@ -1,0 +1,213 @@
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__menu-hamburguer {
+    padding: 1em;
+    width: 24px;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__imagem {
+    margin-left: 0.6em;
+}
+
+.menu__container {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.menu__imagem {
+    padding: 0.5em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 67vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.container__botao:checked ~ .menu__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../assets/MenuAberto.svg")
+}
+
+.container__botao:checked ~ .menu__rotulo {
+    position: relative;
+    height: 100%;
+    background: var(--azul-degrade);
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--dourado-principal);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.lista-menu__item a {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container__botao,
+.container__titulo,
+.opcoes,
+.container__texto {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .cabecalho {
+        padding: 0.7em;
+    }
+
+    .container__titulo, .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        margin-top: 0.3em;
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .container__imagem {
+        margin-left: 5em;
+        margin-right: 0.6875em;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__botao-label > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 1em;
+    }
+    
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 80%;
+        width: 67vw;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+    .cabecalho__menu-hamburguer,
+    .container__texto,
+    .menu__imagem-transparente,  
+    .opcoes__botao {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cabecalho {
+        padding: 0.7em;
+    }
+    
+    .container__imagem {
+        .container__imagem {
+            margin-left: 5em;
+            margin-right: 0.6875em;
+        }
+    }
+
+    .menu__imagem {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
+    }
+
+    .container__texto {
+        display: flex;
+        font-size: 1em;
+        color: var(--preto);
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .opcoes__link {
+        transition: 0.1s;
+    }
+
+    .opcoes__link:hover {
+        color: var(--azul);
+        transition: 0.1s;
+        font-weight: 500;
+    }
+
+    .container__texto {
+        transition: 0.1s;
+    }
+
+    .container__texto:hover {
+        color: var(--azul);
+        transition: 0.1s;
+        font-weight: 500;
+    }
+
+    .cabecalho__menu-hamburguer, 
+    .menu__imagem-transparente {
+        display: none;
+    }
+}
